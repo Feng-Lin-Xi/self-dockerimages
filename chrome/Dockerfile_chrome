@@ -13,7 +13,7 @@ RUN apt-get update; apt-get install -y --no-install-recommends 	ca-certificates 
     echo 'deb-src https://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib' >>/etc/apt/sources.list; \
     echo 'deb https://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib' >>/etc/apt/sources.list; \
     echo 'deb-src https://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib' >>/etc/apt/sources.list; \
-    apt update ;apt-get install -y  libasound2 \
+    apt-get update ;apt-get install -y  libasound2 \
                         libatk-bridge2.0-0  \
                         libatk1.0-0 \
                         libatspi2.0-0 \
@@ -64,7 +64,8 @@ RUN apt-get update; apt-get install -y --no-install-recommends 	ca-certificates 
                         libpng16-16 \
                         libxrender1 \
                         xfonts-75dpi \
-                        xfonts-base && \
+                        xfonts-base \
+                        supervisor && \
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
     wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.bullseye_amd64.deb && \
     dpkg -i google-chrome-stable_current_amd64.deb && \
