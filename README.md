@@ -1,5 +1,6 @@
 # self-dockerimages
 构建镜像 docker build -t <image:tag> -f <Dockerfile_xxx> .
+
 已验证的Dockerfile
 
 Dockerfile_chrome : 基础镜像 debian:bullseye  , 安装了google-chrome-stable、wkhtmltopdf 软件
