@@ -94,7 +94,7 @@ RUN set -eux; \
         wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | apt-key add - ; \
         apt-get update ; \
         apt-get install -y  google-chrome-stable; \
-		apt-get install -y supervisor; \
+	apt-get install -y supervisor; \
         rm -rf /var/lib/apt/lists/* ; \
         rm -rf /etc/localtime ; \
         ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
