@@ -65,6 +65,7 @@ RUN apt-get update; apt-get install -y --no-install-recommends 	ca-certificates 
                         libxrender1 \
                         xfonts-75dpi \
                         xfonts-base \
+                        libgeos-dev \
                         supervisor && \
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
     wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.bullseye_amd64.deb && \
